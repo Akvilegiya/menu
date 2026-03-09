@@ -1,0 +1,41 @@
+/* Обнуление всех стилей */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Чтобы padding не раздувал блоки */
+}
+
+/* Убираем стандартные маркеры у списков */
+ol, ul {
+  list-style: none;
+}
+
+/* Убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Делаем картинки отзывчивыми */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Настраиваем шрифты для форм, так как они не наследуются */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Убираем стандартную рамку у кнопок */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Убираем лишние отступы у таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
